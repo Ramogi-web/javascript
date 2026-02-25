@@ -27,3 +27,17 @@ let username=null
 console.log("What is the username",username)
 
 // Assignment research and come up with examples on Object and Array data types. Show how to access items of the object and of an array.
+
+// Array Data Type : An array is an ordered list of values. Each item in the list has a numerical position called an index, starting at 0.
+const fruits = ["Apple", "Banana", "Cherry", "Date"]
+console.log("Fruits:",fruits)
+
+
+// Object Data Type : An object is a collection of related data stored in key-value pairs. Instead of a number, you use a specific name (the key) to find the data.
+const user = {
+    firstName: "Alice",
+    age: 28,
+    isMember: true,
+    location: "Nairobi"
+}
+console.log(user)
