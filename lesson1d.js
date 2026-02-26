@@ -31,6 +31,7 @@ console.log("What is the username",username)
 // Array Data Type : An array is an ordered list of values. Each item in the list has a numerical position called an index, starting at 0.
 const fruits = ["Apple", "Banana", "Cherry", "Date"]
 console.log("Fruits:",fruits)
+console.log(typeof(fruits))
 
 
 // Object Data Type : An object is a collection of related data stored in key-value pairs. Instead of a number, you use a specific name (the key) to find the data.
@@ -39,5 +40,6 @@ const user = {
     age: 28,
     isMember: true,
     location: "Nairobi"
-}
-console.log(user)
+};
+console.log(user);
+console.log(typeof(user))
