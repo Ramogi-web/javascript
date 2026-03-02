@@ -58,3 +58,53 @@ while(i >= 1){
     i --
 }
  console.log("=====================================")
+
+  // Research on arrow function, functions with parameters and anonymous functions in javascript.
+
+  //1. Functions with Parameters
+  //A parameter is a placeholder defined in the function, while an argument is the actual value you pass when calling it
+        //Single Parameter: Use one variable to receive data.
+        //Multiple Parameters: Separate them with commas.
+        //Default Parameters: Set a fallback value if no argument is provided
+
+// 'name' is the parameter; "Guest" is the default value
+function welcomeUser(name = "Guest") {
+  return "Welcome, " + name + "!";
+}
+
+console.log(welcomeUser("Alice")); // "Welcome, Alice!"
+console.log(welcomeUser());        // "Welcome, Guest!"
+
+
+//2. Anonymous Functions
+//These are functions without a name. They are typically stored in variables (Function Expressions) or used as callbacks passed into other functions
+        //Callback Example: Use them for tasks that happen later, like a timer.
+        //Array Methods: Use them to process lists of data
+
+
+// Stored in a variable
+const sayHi = function() {
+  console.log("Hi there!");
+};
+
+// Used as a callback for a 2-second timer
+setTimeout(function() {
+  console.log("Time's up!");
+}, 2000);
+
+//arrow functions provide a shorter syntax and do not have their own this context
+//Implicit Return: If the function is one line, you can skip return and {}.
+//Parentheses Rules: If there is exactly one parameter, parentheses are optional.
+//Lexical this: They "inherit" the this value from the code around them, which is helpful in classes and objects
+
+
+// Traditional Anonymous Function
+const add = function(a, b) { return a + b; };
+
+// Arrow Function (Equivalent)
+const addArrow = (a, b) => a + b;
+
+// Single parameter (no parentheses needed)
+const square = x => x * x;
+
+console.log(square(5)); // 25
